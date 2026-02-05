@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products-Storayman</title>
+    <link rel="icon" href="iamges/sTor-ayman - Copy (2).png">
+    <link rel="stylesheet" href="page-products paying.css">
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="home1-storayman.html">
+                <img src="iamges/sTor-ayman - Copy (2).png" class="logo-img">
+            </a>
+            <span>Storayman</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home1-storayman.html">Home</a></li>
+            <li><a href="Products-navbar.html">Products</a></li>
+            <li><a href="Contact-navbar.html">Contact</a></li>
+        </ul>
+
+        <!-- Menu Icon for phone -->
+        <i class="bx bx-menu" id="menu-icon"></i>
+    </div>
+
+    <!-- Page Title -->
+    <div class="enbas-text" style="text-align:center; margin-top:100px;">
+    </div>
+
+    <!-- Products -->
+    <div class="products">
+        <div class="product">     
+            <img src="pdf a products/creat-buisness-now.png" alt="business-guide">
+            <h3>business-guide</h3>
+            <a href="Business-Guide-products.html"><button>Buy Free</button></a>
+        </div>
+
+        <div class="product">
+            <img src="pdf a products/learning-food.png" alt="learning-food">
+            <h3>learning Food</h3>
+            <a href="Learning-FoodPDF.html"><button>Buy Free</button></a>
+        </div>
+
+        <div class="product">
+            <img src="pdf a products/think-and-grow-rich.png" alt="think-and-grow-rich">
+            <h3>think-and-grow-rich</h3>
+            <a href="Thik-and-grow-rich.html"><button>Buy Free</button></a>
+        </div>
+    </div>
+
+    <!-- Social Media -->
+    <div class="social-links">
+        <a href="https://www.instagram.com/storayman.blkhir/" target="_blank">
+            <img src="iamges/instagram.png" class="social-icon">
+        </a>
+        <a href="https://web.facebook.com/profile.php?id=100087504415569" target="_blank">
+            <img src="iamges/communication.png" class="social-icon">
+        </a>
+    </div>
+
+    <!-- JS Menu Toggle -->
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuIcon.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

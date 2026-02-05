@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* الخلفية */
+body {
+    background: linear-gradient(135deg, #90da07, #19af39dc, #180707);
+    padding-top: 80px;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(87, 67, 67, 0.6);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffb400;
+}
+
+.logo-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #ffb400;
+}
+
+/* PRODUCTS GRID */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 25px;
+}
+
+/* PRODUCT CARD */
+.product {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* BUY BUTTON */
+.product button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #111;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product button:hover {
+    background: #07811c;
+}
+
+/* SOCIAL */
+.social-links {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 600px) {
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .navbar {
+        padding: 12px 18px;
+    }
+
+    .logo-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .product {
+        padding: 12px;
+    }
+}
+/* MOBILE NAVBAR FIX */
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    /* إخفاء الروابط فالهواتف */
+    .navbar ul {
+        display: none;
+    }
+
+    /* زر المنيو */
+    .menu-btn {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
+    }
+}
+/* --- PHONE MENU --- */
+@media (max-width: 600px) {
+
+    .menu-btn {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+        color: white;
+    }
+
+    /* نخفيو القائمة حتى يضغط */
+    .navbar ul {
+        display: none;
+        position: absolute;
+        top: 70px;  /* باش تبان تحت navbar */
+        right: 10px;
+        width: 160px;
+        background: rgba(0, 0, 0, 0.85);
+        border-radius: 10px;
+        flex-direction: column; /* باش يجيو تحت بعضياتهم */
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .navbar ul li a {
+        color: white;
+        font-size: 16px;
+        display: block;
+        width: 100%;
+    }
+
+    /* إخفاء القائمة ديال الكمبيوتر */
+    .navbar ul {
+        gap: 0;
+    }
+}
+
+/* فالكومبيوتر نخبي زر 3 الشرطات */
+@media (min-width: 601px) {
+    .menu-btn {
+        display: none;
+    }
+}
+/* navbar */
+.navbar {
+    width: 100%;
+    background: #111;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+/* menu links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* menu icon */
+#menu-icon {
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}
+
+/* Social icons */
+.social-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icon {
+    width: 45px;
+    margin: 10px;
+}
+/* navbar */
+.navbar {
+    width: 100%;
+    background: #111;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+/* menu links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* menu icon */
+#menu-icon {
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}
+
+/* Social icons */
+.social-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icon {
+    width: 45px;
+    margin: 10px;
+}
+

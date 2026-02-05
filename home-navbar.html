@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Storayman</title>
+
+    <link rel="icon" href="iamges/Colorful Abstract Illustrative Online               E-commerce Shop Logo.png">
+    <link rel="stylesheet" href="style-home1.css">
+
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="home1.html">
+                <img src="iamges/Colorful Abstract Illustrative Online               E-commerce Shop Logo.png" 
+                alt="Storayman Logo" class="logo-img">
+            </a>
+            <span>Storayman</span>
+        </div>
+
+        <ul>
+            <li><a href="home1-storayman.html">Home</a></li>
+            <li><a href="Products-navbar.html">Products</a></li>
+            <li><a href="Contact-navbar.html">Contact</a></li>
+        </ul>
+
+        <!-- زر الهاتف -->
+        <div class="menu-btn">&#9776;</div>
+    </div>
+
+    <!-- المحتوى -->
+    <h2 style="text-align:center; margin-top:20px;">New products</h2>
+
+    <div class="products">
+        <div class="product">
+            <img src="pdf a products/creat-buisness-now.png" alt="business-guide">
+            <h3>business-guide</h3>
+            <a href="Learning-FoodPDF.html"><button>Buy Free</button></a>
+        </div>
+
+        <div class="product">
+            <img src="pdf a products/learning-food.png">
+            <h3>learning Food</h3>
+            <a href="Learning-FoodPDF.html"><button>Buy Free</button></a>
+        </div>
+
+        <div class="product">
+            <img src="pdf a products/think-and-grow-rich.png" alt="think-and-grow-rich">
+            <h3>think-and-grow-rich</h3>
+            <a href="Thik-and-grow-rich.html"><button>Buy Free</button></a>
+        </div>
+    </div>
+
+    <h2 style="text-align:center; margin-top:20px;">Our Products</h2>
+
+    <div class="products">
+        <!-- ... باقي المنتجات ... -->
+    </div>
+
+    <!-- Social Media -->
+    <div class="social-links">
+        <a href="https://www.instagram.com/yourprofile" target="_blank">
+            <img src="iamges/instagram.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/yourprofile" target="_blank">
+            <img src="iamges/communication.png" alt="Facebook" class="social-icon">
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        let btn = document.querySelector(".menu-btn");
+        let menu = document.querySelector(".navbar ul");
+
+        btn.onclick = () => {
+            menu.style.display = 
+                menu.style.display === "flex" ? "none" : "flex";
+        };
+    </script>
+
+    <script src="products-JS.js"></script>
+
+</body>
+</html>

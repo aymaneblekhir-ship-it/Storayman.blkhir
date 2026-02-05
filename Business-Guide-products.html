@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Business-guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-home1.css">
+    <link href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="iamges/Colorful Abstract Illustrative Online               E-commerce Shop Logo.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+
+        :root {
+            --dark-green: #05291b;
+            --brand-green: #0b4d31;
+            --light-green: #14a36a;
+            --gold: #d9c27a;
+            --offwhite: #f6f6f6;
+            --dark-bg: #031710;
+        }
+
+        body {
+            background: linear-gradient(135deg, #031710, #05291b);
+            padding-top: 90px;
+            color: var(--offwhite);
+        }
+
+        /* ---------- NAVBAR ---------- */
+        .navbar {
+            width: 100%;
+            padding: 15px 40px;
+            background: rgba(3, 23, 16, .6);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(217, 194, 122, .1);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, .35);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .logo-img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+        }
+
+        .navbar ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .navbar ul li a {
+            color: var(--offwhite);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .navbar ul li a:hover {
+            color: var(--gold);
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 32px;
+            cursor: pointer;
+        }
+
+        /* ---------- PRODUCT ---------- */
+        .products {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .product {
+            max-width: 380px;
+            background: var(--dark-bg);
+            border: 1px solid rgba(217, 194, 122, .12);
+            border-radius: 18px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
+        }
+
+        .product img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 2px solid rgba(217, 194, 122, .15);
+        }
+
+        .product h3 {
+            margin: 15px 0 8px;
+            color: var(--gold);
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .product button {
+            padding: 12px 25px;
+            border: none;
+            background: var(--brand-green);
+            color: white;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .product button:hover {
+            background: var(--gold);
+            color: black;
+        }
+
+        /* ---------- SOCIAL ---------- */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .social-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1.5px solid var(--gold);
+            padding: 4px;
+            transition: .3s;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.15);
+            box-shadow: 0 0 12px rgba(217, 194, 122, .6);
+        }
+
+        /* ---------- MOBILE ---------- */
+        @media(max-width:600px) {
+            .navbar ul {
+                display: none;
+                position: absolute;
+                right: 15px;
+                top: 75px;
+                flex-direction: column;
+                background: rgba(5, 41, 27, .96);
+                width: 170px;
+                border-radius: 12px;
+                padding: 15px 0;
+            }
+
+            .navbar ul li {
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="home1-storayman.html">
+                <img src="iamges/Colorful Abstract Illustrative Online               E-commerce Shop Logo.png"
+                    class="logo-img">
+            </a>
+            <span>Storayman</span>
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="home-navbar.html">Home</a></li>
+            <li><a href="Products-navbar.html">Products</a></li>
+            <li><a href="Contact-navbar.html">Contact</a></li>
+        </ul>
+        <button onclick="changeLanguage()">عربي / English</button>
+        <i class='bx bx-menu menu-btn' id="menu-btn"></i>
+    </div>
+
+    <!-- PRODUCT -->
+    <section class="products">
+        <div class="product">
+            <img src="pdf a products/creat-buisness-now.png" alt="Think and Grow Rich">
+            <h3>Business-guide</h3>
+            <p>
+                Business Guide: Your Ultimate Path to Success in Entrepreneurship!
+                This comprehensive digital guide is designed for aspiring entrepreneurs who want to confidently start and grow their own
+                business. It offers practical steps, proven strategies, and essential tools to help you build a successful venture from
+                scratch.
+                
+                What you will learn:
+                - How to launch your business with a solid plan
+                - Effective marketing strategies
+                - Smart money and time management
+                - Developing the mindset of a successful entrepreneur
+                
+                Perfect for: Ambitious youth, students, beginners, and small business owners.
+            </p>
+            <a href="pdf a products/Black Modern Think and Grow Rich Ebook Cover.pdf" download>
+                <button>Buy Free</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <div class="social-links">
+        <a href="#"><img src="iamges/instagram.png" class="social-icon"></a>
+        <a href="#"><img src="iamges/communication.png" class="social-icon"></a>
+    </div>
+
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const nav = document.getElementById("nav-links");
+        btn.onclick = () => nav.style.display =
+            nav.style.display === "flex" ? "none" : "flex";
+            
+                
+                    function changeLanguage() {
+                        // هنا تكتب كود تغيير اللغة، مثلا تحميل صفحة مختلفة أو تبديل النصوص
+                        // مثال بسيط يعيد تحميل الصفحة مع إضافة ?lang=en أو ?lang=ar
+                        let currentUrl = window.location.href;
+                    if(currentUrl.includes("?lang=en")){
+                        window.location.href = currentUrl.replace("?lang=en", "?lang=ar");
+  } else if(currentUrl.includes("?lang=ar")){
+                        window.location.href = currentUrl.replace("?lang=ar", "?lang=en");
+  } else {
+                        window.location.href = currentUrl + "?lang=en";
+  }
+}
+    </script>
+
+</body>
+
+</html>
